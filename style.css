@@ -1,0 +1,207 @@
+body * {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #313438;
+  background: linear-gradient(135deg, #151515, #313438);
+  color: #f99137;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  /* max-width: 700px; */
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(135deg, #151515, #313438);
+  padding-top: 2rem;
+  /* padding: 2rem 3rem; */
+  /* border-radius: 5px; */
+}
+.container .title {
+  font-size: 25px;
+  font-weight: 700;
+  color: antiquewhite;
+  text-align: center;
+  text-transform: capitalize;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.container .sub-title {
+  color: #b5651d;
+}
+.container .title ::before {
+  margin-left: 45%;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  background: #b5651d;
+  width: 4rem;
+}
+.container form .user-detailes {
+  justify-content: space-between;
+  /* margin: 3px 0 1.5rem 0; */
+  width: 100%;
+}
+form .user-detailes .input-box {
+  /* width: calc((100% / 2) -20px); */
+  width: 90%;
+  margin-top: 1rem;
+  margin-bottom: 1px;
+}
+.user-detailes .input-box .deatiles {
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  text-transform: capitalize;
+  font-size: 15px;
+  color: #f99137;
+  text-align: left;
+  display: block;
+  margin: auto;
+}
+.user-detailes .input-box .sub-input,
+.coustom-selec {
+  height: 45px;
+  width: 100%;
+  border: 1px solid #f99137;
+  border-radius: 15px;
+  outline: none;
+  background-color: #313438;
+  margin: 1px;
+  padding: 5px;
+  padding-left: 1rem;
+  /* border-bottom-width: 20px; */
+}
+.user-detailes .input-box .sub-input:focus,
+.user-detailes .input-box .sub-input:valid {
+  color: #fff;
+}
+.sub-font {
+  font-size: 10px;
+  color: #fff;
+}
+.btn {
+  height: 45px;
+  width: 70%;
+  margin: 45px 0;
+}
+.btn input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  background-color: #b5651d;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 15px;
+}
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+  form .user-detailes .input-box {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1px;
+  }
+}
+.name-container {
+  position: relative;
+}
+.card {
+  border: 1px solid #f99137;
+  background-color: #313438;
+  width: 100%;
+}
+.image img {
+  height: 100px;
+  width: 70%;
+}
+#coustom-btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #b5651d;
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.space {
+  margin-top: 3rem;
+  /* margin-bottom: 1rem; */
+}
+.wrapper #cancel-btn,
+.wrapper-two #cancel-btn-2,
+.wrapper-3 #cancel-btn-3,
+.wrapper-4 #cancel-btn-4,
+.wrapper-5 #cancel-btn-5,
+.wrapper-6 #cancel-btn-6,
+.wrapper-7 #cancel-btn-7,
+.wrapper-8 #cancel-btn-8,
+.wrapper-9 #cancel-btn-9,
+.wrapper-10 #cancel-btn-10 {
+  position: absolute;
+  right: 15px;
+  font-size: px;
+  cursor: pointer;
+  color: #fff;
+  top: 15px;
+  display: none;
+}
+
+.wrapper.active {
+  border: none;
+}
+.wrapper.active:hover #cancel-btn,
+.wrapper-two.active:hover #cancel-btn-2,
+.wrapper-3.active:hover #cancel-btn-3,
+.wrapper-4.active:hover #cancel-btn-4,
+.wrapper-5.active:hover #cancel-btn-5,
+.wrapper-6.active:hover #cancel-btn-6,
+.wrapper-7.active:hover #cancel-btn-7,
+.wrapper-8.active:hover #cancel-btn-8,
+.wrapper-9.active:hover #cancel-btn-9,
+.wrapper-10.active:hover #cancel-btn-10 {
+  display: block;
+  /* color: #b5651d; */
+}
+.wrapper #cancel-btn:hover,
+.wrapper-two #cancel-btn-2:hover,
+.wrapper-3 #cancel-btn-3:hover,
+.wrapper-4 #cancel-btn-4:hover,
+.wrapper-5 #cancel-btn-5:hover,
+.wrapper-6 #cancel-btn-6:hover {
+  color: #b5651d;
+}
+.wrapper .file-name,
+.wrapper-two .file-name-two,
+.wrapper-3 .file-name-3,
+.wrapper-4 .file-name-4,
+.wrapper-5 .file-name-5,
+.wrapper-6 .file-name-6 {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  color: #fff;
+  padding: 5px 0;
+  font-size: 18px;
+  background: linear-gradient(135deg, #151516 0%, #26232a 100%);
+  display: none;
+}
+.wrapper.active:hover .file-name,
+.wrapper-two.active:hover .file-name-two,
+.wrapper-3.active:hover .file-name-3,
+.wrapper-4.active:hover .file-name-4,
+.wrapper-5.active:hover .file-name-5,
+.wrapper-6.active:hover .file-name-6 {
+  display: block;
+}
